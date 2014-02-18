@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutorial Javascript</title>
+</head>
+<body>
+<div id="hello"></div>
+<script type="text/javascript">
+    document.getElementById('hello').innerHTML = "Hello World !";
+    document.getElementById('hello').addEventListener('click',function(event){
+        event.preventDefault();
+        event.target.style.backgroundColor = "#00FFFF";
+
+    });
+
+</script>
+
+</body>
+</html>
