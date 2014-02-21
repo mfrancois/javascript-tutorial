@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutorial Javascript</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <label for="testeur">For dispatch error write "error"</label>
+    <input name="testeur" id="testeur" type="text" />
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery('#testeur').off('keyup').on('keyup',function(event){
+               var value = jQuery(this).val();
+               console.assert(!(value == "error"),'An error as dispatch !');
+            });
+        });
+    </script>
+</div>
+</body>
+</html>
